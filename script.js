@@ -35,7 +35,7 @@ function newQuote(){
 // Get quotes from API
 async function getQuotes() {
      loading();
-     const apiUrl ='https://dummyjson.com/quotes';
+     const apiUrl ='https://dummyjson.com/quotes?limit=0&skip=10';
      try{
         const response = await fetch(apiUrl);
         apiQuotes = await response.json();
